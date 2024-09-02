@@ -5,6 +5,7 @@ import { Image } from "@nextui-org/image";
 import { Divider } from "@nextui-org/divider";
 import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
+import BlurFade from "@/components/magicui/blur-fade";
 import { Button } from "@nextui-org/button";
 import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 import { Snippet } from "@nextui-org/snippet";
@@ -53,6 +54,13 @@ export default function IndexPage() {
               <p className="text-center text-[1rem] md:text-[1.25rem]">
                 Indulge in a variety of Tasty dishes that showcase the rich flavors of our region, crafted with love and attention to detail.
               </p>
+              <div className="flex gap-3 my-4">
+                <Link href="/party-and-events">
+              <Button color="primary">
+                Find Out More →
+              </Button>
+              </Link>
+               </div>
             </div>
           </BoxReveal>
 
@@ -63,6 +71,13 @@ export default function IndexPage() {
               <p className="text-center text-[1rem] md:text-[1.25rem]">
                 We cater to parties and events, making your special occasions memorable with our exceptional service and culinary expertise.
               </p>
+              <div className="flex gap-3 my-4">
+                <Link href="/party-and-events">
+              <Button color="primary">
+                Find Out More →
+              </Button>
+              </Link>
+               </div>
             </div>
           </BoxReveal>
 
@@ -73,15 +88,15 @@ export default function IndexPage() {
               <p className="text-center text-[1rem] md:text-[1.25rem]">
                 Our cozy rooms offer the perfect retreat, blending comfort with modern amenities for a relaxing stay.
               </p>
+              <div className="flex gap-3 my-4">
+                <Link href="/book-rooms">
+              <Button color="primary">
+                Find Out More →
+              </Button>
+              </Link>
+               </div>
             </div>
           </BoxReveal>
-        </div>
-        <div className="flex gap-3">
-          <Link href="/party-and-events">
-        <Button color="primary">
-          Find Out More →
-        </Button>
-        </Link>
         </div>
       </section>
       <Divider className="my-4" />
@@ -145,6 +160,19 @@ export default function IndexPage() {
           </iframe>
         </div>
       </section>
+      <Divider className="my-4" />
+      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10" >
+      <BlurFade delay={0.25} inView>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+          See you Soon 👋
+        </h2>
+      </BlurFade>
+      <BlurFade delay={0.25 * 2} inView className="my-4">
+        <span className="text-xl text-pretty sm:text-3xl xl:text-4xl/none">
+          At {siteConfig.name}
+        </span>
+      </BlurFade>
+    </section>
     </DefaultLayout>
   );
 }
