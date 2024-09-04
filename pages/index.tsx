@@ -168,8 +168,8 @@ export default function IndexPage() {
         </h2>
       </BlurFade>
       <BlurFade delay={0.25 * 2} inView className="my-4">
-        <span className="text-xl text-pretty sm:text-3xl xl:text-4xl/none">
-          At {siteConfig.name}
+        <span className="text-xl text-pretty tracking-tighter sm:text-3xl xl:text-4xl/none">
+           {siteConfig.name}
         </span>
       </BlurFade>
     </section>
