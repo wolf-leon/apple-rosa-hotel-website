@@ -48,7 +48,7 @@ export const siteConfig = {
     }
   ],
   links: {
-    whatsapp: "https://wa.me/+9112345678",
-    phone_number: "9234567809"
+    whatsapp: "https://wa.me/+919637299851",
+    phone_number: "9637299851"
   },
 };
