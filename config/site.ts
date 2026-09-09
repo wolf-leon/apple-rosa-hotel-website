@@ -1,8 +1,25 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Hotel Apple Rosa",
+  description: "A warm stay, terrace-top celebrations, and generous dining in Goa.",
+  contact: {
+    whatsapp: {
+      label: "WhatsApp",
+      href: "https://wa.me/91",
+      detail: "Chat with our team",
+    },
+    email: {
+      label: "Email us",
+      href: "mailto:hotelapplerosa@gmail.com",
+      detail: "hotelapplerosa@gmail.com",
+    },
+    google: {
+      label: "Google",
+      href: "https://www.google.com/search?q=Hotel+Apple+Rosa+Goa",
+    },
+    phone: "+91 00000 00000",
+  },
   navItems: [
     {
       label: "Home",
